@@ -1,13 +1,3 @@
-export PATH=$PATH:/usr/local/hadoop/sbin:/usr/local/hadoop/bin:/usr/local/hbase/bin:/usr/local/mongodb/bin
-
-export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_162
-export JRE_HOME=${JAVA_HOME}/jre
-export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
-export PATH=${JAVA_HOME}/bin:$PATH
-
-export PYTHONPATH=/usr/local/python36/bin/python3
-alias python='/usr/bin/python/python'
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -126,5 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# added by Anaconda3 installer
-export PATH="/home/hadoop/anaconda3/bin:$PATH"
+export PATH=/home/acs/.homework:$PATH
+alias tmux='tmux -u'
+
+export PATH=/home/acs/homework/lesson_7/homework_0:$PATH
