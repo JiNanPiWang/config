@@ -1,3 +1,10 @@
+export HADOOP_HOME=/usr/local/hadoop
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_371
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:${HADOOP_HOME}/bin:$PATH
+
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -116,7 +123,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=/home/acs/.homework:$PATH
 alias tmux='tmux -u'
-
-export PATH=/home/acs/homework/lesson_7/homework_0:$PATH
