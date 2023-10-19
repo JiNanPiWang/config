@@ -2,7 +2,7 @@ export HADOOP_HOME=/usr/local/hadoop
 export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_371
 export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
-export PATH=${JAVA_HOME}/bin:${HADOOP_HOME}/bin:${HADOOP_HOME}/sbin:$PATH
+export PATH=${JAVA_HOME}/bin:/usr/local/bin:${HADOOP_HOME}/bin:${HADOOP_HOME}/sbin:$PATH
 
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
